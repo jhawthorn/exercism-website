@@ -3,13 +3,14 @@ class PagesController < ApplicationController
   skip_before_action :store_location
 
   PAGES = {
+    #"About Exercism": :about,
+
     "Terms of Service": :terms_of_service,
     "Privacy Policy": :privacy,
     "Code of Conduct": :code_of_conduct,
     "Frequently Asked Questions": :faqs,
     "Command Line Interface": :cli,
     "Exercism's Values": :values,
-    "About Exercism": :about,
     "Getting Started": :getting_started,
     "Become a Maintainer": :become_a_maintainer,
     "Report Abuse": :report_abuse,
@@ -66,5 +67,8 @@ class PagesController < ApplicationController
       current_user,
       Git::WebsiteContent.head.walkthrough
     )
+  end
+
+  def about
   end
 end

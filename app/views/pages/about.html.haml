@@ -1,0 +1,99 @@
+#about-page.lo-company-page
+  .lo-company-pages-header
+    .lo-container
+      =link_to "About", "#", class: 'about selected'
+      =link_to "Team", "#"
+      =link_to "Supporters", "#"
+      =link_to "Values", "#"
+      =link_to "Strategy", "#"
+
+  %section.top-banner-section
+    .lo-container
+      %h1
+        %strong We are a not-for-profit organisation
+        providing opportunity through programming education
+
+  %section.vision-section
+    .lo-container
+      .info
+        %h2 We believe that developing programming skills is route for social mobility
+        %p Copy about our vision ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+        =link_to "More on our vision", "#", class: 'section-link'
+      .quote
+        .text
+          %i.fa.fa-quote-left
+          .copy Exercism is a great gift to the programming community and I hope when I finally achieve my Rock Star status I won’t forget to give back and do my own bit of mentoring.
+        .byline Dr Moxie
+
+  %section.stats-section
+    .lo-container
+      .hexes
+        .hex
+          .value 1.4m
+          .label solutions submitted
+        .hex
+          .value 236k
+          .label conversations
+        .hex
+          .value 330k
+          .label users in 220 countries
+        .hex
+          .value 50
+          .label programming langugages
+        .hex
+          .value 2.5k
+          .label mentors in 29 timezones
+        .hex
+          .value 53k
+          .label Git commits
+        .hex
+          .value 3.6k
+          .label contributions
+
+      %p Created by volunteers. Grown purely through word of mouth
+
+  %section.supporters-section
+    .lo-container
+      .info
+        %h2 Supporters
+        %p Our visionl never be achieved through our work alone. Our supporters are a crucial. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        =link_to "Learn more about how you can support us", "#", class: 'pure-button'
+      .current
+        %h3 Current supporters
+        =link_to image_tag("supporter-logos/mozilla.png"), "#", class: 'logo'
+        =link_to image_tag("supporter-logos/thalamus.png"), "#", class: 'logo'
+        =link_to "Your Organisation Here", "#", class: "your-organisation-here"
+
+  %section.methodology-section
+    .lo-container
+      %table
+        %tr
+          %th Decisions
+          %th Leadership
+          %th Execution
+        %tr
+          %td Prioritise vision over money
+          %td Grounded in learning theory
+          %td Community sourced feedback
+        %tr
+          %td Prioritise vision over money
+          %td Grounded in learning theory
+          %td Community sourced feedback
+        %tr
+          %td Prioritise vision over money
+          %td Grounded in learning theory
+          %td Community sourced feedback
+
+      .info
+        %h2 How we work
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        =link_to "Read Exercism’s strategy", "#", class: 'section-link'
+
+  %section.story-section
+    .lo-container
+      .content
+        %h2 Our story
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        =link_to "More on our story", "#", class: 'section-link'
+      .map
+        =image_tag "photo-map.png"

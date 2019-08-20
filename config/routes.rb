@@ -224,6 +224,8 @@ Rails.application.routes.draw do
   # ##### #
   # Pages #
   # ##### #
+  get "about" => "pages#about", as: 'about_page'
+
   PagesController::PAGES.values.each do |page|
     get page.to_s.dasherize => "pages##{page}", as: "#{page}_page"
   end
