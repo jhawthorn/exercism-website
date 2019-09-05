@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixins';
+
+.lo-organisation-page {
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
+    .lo-organisation-pages-menu {
+        padding-bottom:10px;
+        a {
+            color:#666;
+            text-decoration:none;
+            padding-bottom:3px;
+            display:inline-block;
+            margin-right:15px;
+            padding-top:10px;
+            &.selected {
+                color:$color-2;
+                font-weight:$fw-bold;
+                border-bottom:2px solid $color-1;
+            }
+        }
+    }
+    .organisation-top-banner-section {
+        padding:50px 0;
+        background:black;
+        color:#fff;
+
+        .lo-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+        h1 {
+            max-width:450px;
+            padding:80px 0;
+            color:#fff;
+            @include font-size(30, 35);
+            font-weight:$fw-light;
+            strong {
+                font-weight:$fw-semibold;
+            }
+        }
+    }
+}

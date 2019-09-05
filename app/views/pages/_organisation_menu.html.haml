@@ -1,0 +1,7 @@
+.lo-organisation-pages-menu
+  .lo-container
+    =link_to "About", "#", class: "#{selected == "about" ? "selected" : ""}"
+    =link_to "Team", "#", class: "#{selected == "team" ? "selected" : ""}"
+    =link_to "Supporters", supporters_page_path, class: "#{selected == "supporters" ? "selected" : ""}"
+    =link_to "Values", "#", class: "#{selected == "values" ? "selected" : ""}"
+    =link_to "Strategy", "##{selected == "story" ? "selected" : ""}"
