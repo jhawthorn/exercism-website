@@ -1,25 +1,6 @@
 @import 'variables';
 @import 'mixins';
 
-.lo-company-page {
-    .lo-company-pages-header {
-        padding-bottom:10px;
-        a {
-            color:#666;
-            text-decoration:none;
-            padding-bottom:3px;
-            display:inline-block;
-            margin-right:15px;
-            padding-top:10px;
-            &.selected {
-                color:$color-2;
-                font-weight:$fw-bold;
-                border-bottom:2px solid $color-1;
-            }
-        }
-    }
-}
-
 #about-page {
     section {
         padding:50px 0;
@@ -99,9 +80,10 @@
                 .value {
                     @include font-size(25, 25);
                     margin-bottom:5px;
+                    font-weight:$fw-semibold;
                 }
                 .label {
-                    @include font-size(14, 17);
+                    @include font-size(14, 15);
                 }
             }
         }
@@ -121,10 +103,6 @@
             .lo-container {
                 display:flex;
                 align-items: center;
-
-                &>* {
-                    width:50%;
-                }
             }
         }
 
@@ -138,10 +116,8 @@
     section.methodology-section,
     section.story-section {
         margin-bottom:0;
-        border-bottom:1px solid #eee;
-
         @include width-medium() {
-            border-bottom:none;
+            border-bottom:none !important;
         }
 
         h2 {
@@ -163,13 +139,19 @@
             @include font-size(22, 27);
             margin-bottom:10px;
         }
+        p {
+            strong {
+                font-weight:$fw-bold;
+            }
+        }
         .quote {
             display:flex;
             flex-direction:column;
             justify-content:center;
 
             @include width-medium() {
-                padding-left:150px;
+                min-width:500px;
+                padding-left:100px;
             }
 
             .text {
@@ -186,6 +168,8 @@
         }
     }
     section.supporters-section {
+        border-bottom:1px solid #eee;
+
         .pure-button {
             background:$color-2;
         }
@@ -193,6 +177,7 @@
         .info {
             margin-bottom:40px;
             @include width-medium() {
+                max-width:50%;
                 margin-bottom:0;
             }
         }
@@ -203,6 +188,7 @@
             justify-content: center;
 
             @include width-medium() {
+                min-width:500px;
                 padding-left:100px;
             }
 
@@ -210,11 +196,12 @@
                 font-weight:$fw-semibold;
             }
             a.logo {
-                height:40px;
+                width:200px;
                 display:block;
                 margin-top:10px;
                 img {
-                    height:100%;
+                    display:block;
+                    width:100%;
                 }
             }
             .your-organisation-here {
@@ -231,6 +218,8 @@
     }
 
     section.methodology-section {
+        border-bottom:1px solid #eee;
+
         .info {
             @include width-medium() {
                 padding-left:50px;
@@ -283,6 +272,7 @@
             width:100%;
 
             @include width-medium() {
+                min-width:500px;
                 padding-left:100px;
             }
         }

@@ -1,11 +1,5 @@
-#about-page.lo-company-page
-  .lo-company-pages-header
-    .lo-container
-      =link_to "About", "#", class: 'about selected'
-      =link_to "Team", "#"
-      =link_to "Supporters", "#"
-      =link_to "Values", "#"
-      =link_to "Strategy", "#"
+#about-page.lo-organisation-page
+  =render "organisation_menu", selected: "about"
 
   %section.top-banner-section
     .lo-container
@@ -16,9 +10,22 @@
   %section.vision-section
     .lo-container
       .info
-        %h2 We believe that developing programming skills is route for social mobility
-        %p Copy about our vision ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-        =link_to "More on our vision", "#", class: 'section-link'
+        %h2 Developing programming skills is fun and empowering. It is also a powerful route for economic and social mobility.
+        %p 
+          Exercism aims to provide opportunity for people of 
+          %strong all backgrounds 
+          by helping them develop their programming skills through practice and mentorship. We provide thousands of exercises spread across over 50 language tracks, and offer both 
+          %strong automated and human mentoring.
+        %p Our current platform is targeted at people with some programming experience who want to deepen their knowledge or learn new languages. In time, we will also offer support for total beginners.
+        %p
+          Exercism is
+          %strong 100% free.
+          It is entirely
+          %strong open source
+          and relies on the contributions of
+          %strong thousands of volunteers.
+          Our platform is designed to be fun and friendly, and we place a strong emphasis on empathetic communication.
+        =link_to "Learn more about our vision", "#", class: 'section-link'
       .quote
         .text
           %i.fa.fa-quote-left
@@ -56,10 +63,13 @@
     .lo-container
       .info
         %h2 Supporters
-        %p Our visionl never be achieved through our work alone. Our supporters are a crucial. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        =link_to "Learn more about how you can support us", "#", class: 'pure-button'
+        %p Exercism relies on both the generosity of individuals with their time, and the generosity of organisations to financially support us. 
+        %p While much of Exercism is run by our volunteer community, the website and core infrastructure are managed by a full-time team. We also undertake specific larger projects, such as the development of our automated analyzers, which require a committed team working more intensely on something over a fixed period of time. 
+        %p In order to fund this core team and these products we rely on grant funding from companies or organisation that wish to contribute to our vision of helping providing free programming education for everyone.
+        =link_to "Learn more about how you can support us", supporters_page_path, class: 'pure-button'
       .current
         %h3 Current supporters
+        =link_to image_tag("supporter-logos/sloan.png"), "#", class: 'logo'
         =link_to image_tag("supporter-logos/mozilla.png"), "#", class: 'logo'
         =link_to image_tag("supporter-logos/thalamus.png"), "#", class: 'logo'
         =link_to "Your Organisation Here", "#", class: "your-organisation-here"
