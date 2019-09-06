@@ -46,6 +46,9 @@ gem 'lograge'
 gem 'recaptcha'
 gem 'actionview_precompiler', path: "../actionview_precompiler"
 
+gem 'stackprof'
+gem 'flamegraph'
+
 group :production do
   gem "skylight"
 end
