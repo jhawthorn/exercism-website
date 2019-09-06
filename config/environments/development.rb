@@ -48,7 +48,9 @@ Rails.application.configure do
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
-  config.assets.debug = true
+  config.assets.debug = false
+  config.assets.compile = false
+  config.public_file_server.enabled = true
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
@@ -67,9 +69,9 @@ Rails.application.configure do
 
   Exercism::configure_logging(config)
 
-  config.after_initialize do
-    Bullet.enable = true
-  end
+  #config.after_initialize do
+  #  Bullet.enable = false
+  #end
 end
 
 Rails.application.routes.default_url_options = { :host => "localhost:3000" }
