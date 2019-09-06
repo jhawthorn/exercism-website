@@ -1,3 +1,9 @@
+PATH
+  remote: ../actionview_precompiler
+  specs:
+    actionview_precompiler (0.2.0)
+      actionview (>= 6.0.a)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,8 +43,6 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    actionview_precompiler (0.2.0)
-      actionview (>= 6.0.a)
     activejob (6.0.0)
       activesupport (= 6.0.0)
       globalid (>= 0.3.6)
@@ -428,7 +432,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionview_precompiler
+  actionview_precompiler!
   aws-sdk-s3
   bootsnap (>= 1.1.0)
   bugsnag

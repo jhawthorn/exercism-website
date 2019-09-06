@@ -44,7 +44,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'lograge'
 
 gem 'recaptcha'
-gem 'actionview_precompiler'
+gem 'actionview_precompiler', path: "../actionview_precompiler"
 
 group :production do
   gem "skylight"
